@@ -79,8 +79,8 @@ class techDepartment extends superDepartment {
     System.out.println(obj.is_today_holiday());
     System.out.println();
     hrDepartment obj2= new hrDepartment();
-    System.out.println(hrDepartment.dept_name());
-    System.out.println(hrDepartment.do_activity());
+    System.out.println(obj2.dept_name());
+    System.out.println(obj2.do_activity());
     System.out.println(obj2.get_todays_work());
     System.out.println(obj2.get_work_deadline());
     System.out.println(obj.is_today_holiday());
