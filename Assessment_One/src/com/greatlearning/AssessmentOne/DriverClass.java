@@ -2,12 +2,12 @@ package com.greatlearning.AssessmentOne;
 import java.util.*;
 
 class superDepartment{
-	String dept_name;
+	String department_name;
 	String get_todays_work;
 	String get_work_deadline;
 	String is_today_holiday;
 	
-	public static String dept_name() {
+	public static String department_name() {
 		return "  DEPARTMENT NAME  :  Welcome to Super department.";
 	}
 	public static String get_todays_work() {
@@ -21,7 +21,7 @@ class superDepartment{
 	}
 }
 class adminDepartment extends superDepartment{
-	public static String dept_name() {
+	public static String department_name() {
 		
 		return "  DEPARTMENT NAME  :  Welcome to Admin Department.";
 	}
@@ -34,7 +34,7 @@ class adminDepartment extends superDepartment{
 }
 class hrDepartment extends superDepartment{
 	
-	public static String dept_name() {
+	public static String departname_name() {
 		return "  DEPARTMENT NAME  :  Welcome to Human Resource Department.";
 	}
 	public static String do_activity() {
@@ -49,7 +49,7 @@ class hrDepartment extends superDepartment{
 }
 class techDepartment extends superDepartment {
 	
-	public static String dept_name() {
+	public static String department_name() {
 		return "  DEPARTMENT NAME  :  Welcome to Technology Department.";
 	}
 	public static String get_todays_work() {
@@ -67,26 +67,26 @@ class techDepartment extends superDepartment {
  public class DriverClass {
 	public static void main(String[] args) {
     superDepartment obj = new superDepartment();
-    System.out.println(obj.dept_name());
+    System.out.println(obj.department_name());
     System.out.println(obj.get_todays_work());
     System.out.println(obj.get_work_deadline());
     System.out.println(obj.is_today_holiday());
     System.out.println();
     adminDepartment obj1= new adminDepartment();
-    System.out.println(obj1.dept_name());
+    System.out.println(obj1.department_name());
     System.out.println(obj1.get_todays_work());
     System.out.println(obj1.get_work_deadline());
     System.out.println(obj.is_today_holiday());
     System.out.println();
     hrDepartment obj2= new hrDepartment();
-    System.out.println(obj2.dept_name());
+    System.out.println(obj2.department_name());
     System.out.println(obj2.do_activity());
     System.out.println(obj2.get_todays_work());
     System.out.println(obj2.get_work_deadline());
     System.out.println(obj.is_today_holiday());
     System.out.println();
     techDepartment obj3= new techDepartment();
-    System.out.println(obj3.dept_name());
+    System.out.println(obj3.department_name());
     System.out.println(obj3.get_todays_work());
     System.out.println(obj3.get_work_deadline());
     System.out.println(obj3.get_tech_stack_information());
